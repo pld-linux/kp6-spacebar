@@ -16,7 +16,7 @@ License:	GPL v2+
 Group:		Applications/Communication
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
 # Source0-md5:	3b45db331054998f6aa1c0e81404652c
-URL:		https://plasma-mobile.org/
+URL:		https://invent.kde.org/plasma-mobile/spacebar
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Sql-devel >= %{qtver}
 BuildRequires:	cmake >= 3.16.0
