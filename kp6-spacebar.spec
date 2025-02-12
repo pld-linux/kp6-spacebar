@@ -2,20 +2,21 @@
 # Conditional build:
 %bcond_with	tests		# test suite
 
-%define		kdeplasmaver	6.2.5
+%define		kdeplasmaver	6.3.0
 %define		qtver		6.7.0
 %define		kpname		spacebar
 %define		kf6_ver		6.5.0
 
 Summary:	A SMS/MMS messaging client
 Summary(pl.UTF-8):	Program do wysyłania SMSów|MMSów
+######		Unknown group!
 Name:		kp6-%{kpname}
-Version:	6.2.5
+Version:	6.3.0
 Release:	1
 License:	GPL v2+
 Group:		Applications/Communication
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	7bcb6803e494fdedc2d7e9a66f51eab3
+# Source0-md5:	42987e4927e65afbaff7a7cd33c9cb0a
 URL:		https://invent.kde.org/plasma-mobile/spacebar
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Sql-devel >= %{qtver}
@@ -84,6 +85,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 /etc/xdg/autostart/org.kde.spacebar.daemon.desktop
 %attr(755,root,root) %{_bindir}/spacebar
+%attr(755,root,root) %{_bindir}/spacebar-fakeserver
 %attr(755,root,root) %{_prefix}/libexec/spacebar-daemon
 %{_desktopdir}/org.kde.spacebar.desktop
 %{_iconsdir}/hicolor/scalable/apps/org.kde.spacebar.svg
