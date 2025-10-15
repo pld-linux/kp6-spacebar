@@ -12,7 +12,7 @@ Summary(pl.UTF-8):	Program do wysyłania SMSów|MMSów
 ######		Unknown group!
 Name:		kp6-%{kpname}
 Version:	6.4.5
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/Communication
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
