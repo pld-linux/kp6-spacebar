@@ -8,7 +8,7 @@
 %define		kf6_ver		6.5.0
 
 Summary:	A SMS/MMS messaging client
-Summary(pl.UTF-8):	Program do wysyłania SMSów|MMSów
+Summary(pl.UTF-8):	Program do wysyłania SMS-ów/MMS-ów
 Name:		kp6-%{kpname}
 Version:	6.5.5
 Release:	2
@@ -53,7 +53,7 @@ Spacebar is a SMS/MMS messaging client. It allows you to send text
 messages, pictures and other files over a cellular network.
 
 %description -l pl.UTF-8
-Spacebar jest programem do wysyłania SMSów|MMSów. Pozwala wysyłać
+Spacebar jest programem do wysyłania SMS-ów/MMS-ów. Pozwala wysyłać
 wiadomości tekstowe, zdjęcia i inne pliki przez sieci komórkowe.
 
 %prep
