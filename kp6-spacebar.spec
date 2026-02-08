@@ -93,7 +93,7 @@ rm -rf $RPM_BUILD_ROOT
 /etc/xdg/autostart/org.kde.spacebar.daemon.desktop
 %attr(755,root,root) %{_bindir}/spacebar
 %attr(755,root,root) %{_bindir}/spacebar-fakeserver
-%attr(755,root,root) %{_prefix}/libexec/spacebar-daemon
+%attr(755,root,root) %{_libexecdir}/spacebar-daemon
 %{_desktopdir}/org.kde.spacebar.desktop
 %{_iconsdir}/hicolor/scalable/apps/org.kde.spacebar.svg
 %{_datadir}/knotifications6/spacebar.notifyrc
