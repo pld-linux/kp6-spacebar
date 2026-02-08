@@ -11,7 +11,7 @@ Summary:	A SMS/MMS messaging client
 Summary(pl.UTF-8):	Program do wysyłania SMS-ów/MMS-ów
 Name:		kp6-%{kpname}
 Version:	6.5.5
-Release:	2
+Release:	3
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
