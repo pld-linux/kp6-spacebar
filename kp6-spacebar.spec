@@ -2,10 +2,10 @@
 # Conditional build:
 %bcond_with	tests		# test suite
 
-%define		kdeplasmaver	6.5.5
-%define		qtver		6.7.0
+%define		kdeplasmaver	%{version}
+%define		qt_ver		6.9.0
 %define		kpname		spacebar
-%define		kf6_ver		6.5.0
+%define		kf6_ver		6.18.0
 
 Summary:	A SMS/MMS messaging client
 Summary(pl.UTF-8):	Program do wysyłania SMS-ów/MMS-ów
@@ -17,19 +17,25 @@ Group:		X11/Applications
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
 # Source0-md5:	99c7f507019a777a629955fbe8e5a716
 URL:		https://invent.kde.org/plasma-mobile/spacebar
-BuildRequires:	Qt6Core-devel >= %{qtver}
-BuildRequires:	Qt6Sql-devel >= %{qtver}
+BuildRequires:	Qt6Concurrent-devel >= %{qt_ver}
+BuildRequires:	Qt6Core-devel >= %{qt_ver}
+BuildRequires:	Qt6Gui-devel >= %{qt_ver}
+BuildRequires:	Qt6Qml-devel >= %{qt_ver}
+BuildRequires:	Qt6Quick-devel >= %{qt_ver}
+BuildRequires:	Qt6Sql-devel >= %{qt_ver}
+BuildRequires:	Qt6Widgets-devel >= %{qt_ver}
+BuildRequires:	c-ares-devel
 BuildRequires:	cmake >= 3.16.0
 BuildRequires:	curl-devel
 BuildRequires:	futuresql-qt6-devel
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	kf6-extra-cmake-modules >= %{kf6_ver}
 BuildRequires:	kf6-kconfig-devel >= %{kf6_ver}
 BuildRequires:	kf6-kcontacts-devel >= %{kf6_ver}
 BuildRequires:	kf6-kcoreaddons-devel >= %{kf6_ver}
 BuildRequires:	kf6-kcrash-devel >= %{kf6_ver}
 BuildRequires:	kf6-kdbusaddons-devel >= %{kf6_ver}
-BuildRequires:	kf6-ki18n-devel >= 6.7.0
+BuildRequires:	kf6-ki18n-devel >= %{kf6_ver}
 BuildRequires:	kf6-kio-devel >= %{kf6_ver}
 BuildRequires:	kf6-kirigami-addons-devel >= 1.4
 BuildRequires:	kf6-kirigami-devel >= %{kf6_ver}
