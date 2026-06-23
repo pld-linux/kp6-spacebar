@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_with	tests		# test suite
 
-%define		kdeplasmaver	6.7.0
+%define		kdeplasmaver	6.7.1
 %define		qt_ver		6.9.0
 %define		kpname		spacebar
 %define		kf6_ver		6.18.0
@@ -10,12 +10,12 @@
 Summary:	A SMS/MMS messaging client
 Summary(pl.UTF-8):	Program do wysyłania SMS-ów/MMS-ów
 Name:		kp6-%{kpname}
-Version:	6.7.0
+Version:	6.7.1
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	5021ab952299eb864bb38eb028019b01
+# Source0-md5:	d4d9b418f58fdcc548fe2ebb2a3916d9
 URL:		https://invent.kde.org/plasma-mobile/spacebar
 BuildRequires:	Qt6Concurrent-devel >= %{qt_ver}
 BuildRequires:	Qt6Core-devel >= %{qt_ver}
